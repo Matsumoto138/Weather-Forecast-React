@@ -11,38 +11,38 @@ function App() {
 
   const [data, setData] = useState({})
 
-  useEffect(() => {
+  
     const fetchData = async () => {
       try {
         const response = await fetch('/data/ReactProjectData.json', {
           method: "GET",
         });
-  
-        // response.json() fonksiyonunu kullanarak doğrudan JSON verisini alabilirsiniz
-        const json = await response.json();
-        
+
+        const json = await response.json();  
         setData(json);
+
       } catch (error) {
         console.log(error);
       }
     };
+    useEffect(() => {
     fetchData()
     
   }, []);
 
-  console.log(data);
+  
   return (
     <div className="App">
       
       <div className="Top-Section">
-        <Weather />
+        <Weather data={data} />
         <HourlyForecast />
       </div>
       <div className="Bottom-Section">
         <SidebarMenu />
         <div className="Bottom-Mid-Section">
           <Activities />
-          <WeeklyForecast />
+          <WeeklyForecast data={data.weeklyWeather} />
         </div>
         <AirConditions />
       </div>

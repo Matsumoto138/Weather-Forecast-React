@@ -1,0 +1,53 @@
+.SidebarMenu{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.SidebarMenu .Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 27px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.SidebarMenu .Menu nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SidebarMenu .Menu ul{
+    list-style: none;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.SidebarMenu .Menu ul li{
+    margin: 0.2rem 0;
+}
+
+.SidebarMenu #Logo{
+    width: 60%;
+    margin-bottom: 1rem;
+    
+}
+
+.SidebarMenu .Menu .Menu-Item{
+    width: 20px;
+}
+
+.SidebarMenu .Menu .Menu-Item.Active{
+    width: 40px;
+}

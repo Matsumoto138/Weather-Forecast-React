@@ -1,0 +1,47 @@
+.WeeklyForecast{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(230, 230, 230, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 27px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.Forecast-List{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 10px;
+    height: 70%;
+}
+
+.Forecast-List .List{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.Forecast-List .List .Day{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.Forecast-List img{
+    width: 40px;
+    height: 40px;
+}
+
+button{
+    height: 100px;
+    width: 15px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+

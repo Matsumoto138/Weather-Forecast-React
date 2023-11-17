@@ -1,0 +1,27 @@
+.Weather{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+.Weather .Information{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.Weather .Information #City{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Weather .Information #City img{
+    margin: 0 0.5rem;
+}
+
+.WeatherIcon img{
+    width: 200px;
+}
