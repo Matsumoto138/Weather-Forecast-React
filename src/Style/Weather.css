@@ -25,3 +25,18 @@
 .WeatherIcon img{
     width: 200px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .Weather{
+        width: 100%;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 100px);
+    }
+
+    .WeatherIcon img{
+        width: 100px;
+    }
+    
+  }

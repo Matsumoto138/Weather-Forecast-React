@@ -44,7 +44,7 @@ function App() {
           <Activities />
           <WeeklyForecast data={data.weeklyWeather} />
         </div>
-        <AirConditions />
+        <AirConditions data={data} />
       </div>
     </div>
   );

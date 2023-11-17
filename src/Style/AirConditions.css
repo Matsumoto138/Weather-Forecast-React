@@ -1,0 +1,70 @@
+.AirConditions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1rem;
+    background: rgba(230, 230, 230, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 27px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.AirConditions .Hour{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.AirConditions #Hour{
+    font-size: 20px;
+}
+
+.Title{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.Icon{
+    width: 30px;
+}
+
+.Info-Box1, .Info-Box2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Temp, .Wind, .Rain-Change, .UV{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.Temp, .Wind, .Rain-Change, .UV p{
+    font-size: 12px;
+}
+
+.Rain-Change .Sm-Conditions-Title p{
+width: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .AirConditions{
+        height: 300px;
+    }
+
+    .AirConditions .Hour{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+        justify-content: space-between;
+    }
+}

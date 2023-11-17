@@ -44,4 +44,26 @@ button{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+    .WeeklyForecast{
+        width: 100%;
+        margin: 0 auto;
+    }
 
+    .Forecast-List{
+        display: grid;
+        grid-template-columns: repeat(7, 40px);
+        column-gap: 10px;
+        height: 70%;
+        margin: 0 auto;
+    }
+
+    .Forecast-List img{
+        width: 20px;
+        height: 20px;
+    }
+    .Forecast-List .List .Day{
+        font-size: 10px;
+        font-weight: lighter;
+    }
+}

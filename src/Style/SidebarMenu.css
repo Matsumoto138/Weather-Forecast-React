@@ -1,6 +1,12 @@
 .SidebarMenu{
     display: flex;
     justify-content: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 27px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     
 }
 
@@ -10,12 +16,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 27px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
 }
 
 .SidebarMenu .Menu nav{
@@ -50,4 +51,41 @@
 
 .SidebarMenu .Menu .Menu-Item.Active{
     width: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .SidebarMenu{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .SidebarMenu .Menu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem 0;
+        
+    }
+
+    .SidebarMenu .Menu ul{
+        list-style: none;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .SidebarMenu .Menu nav{
+        width: 60%;
+    }
+
+    .SidebarMenu #Logo{
+        width: 60%;
+        max-width: 50px;
+        margin-bottom: 1rem;
+        
+    }
 }
