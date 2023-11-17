@@ -1,0 +1,17 @@
+.HourlyForecast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HourlyCart{
+    height: 150px!important;
+    width: 100%!important;
+}
+
+@media (max-width: 1000px) {
+    .HourlyForecast{
+        width: 90%!important;
+        margin: 0 auto;
+    }
+}

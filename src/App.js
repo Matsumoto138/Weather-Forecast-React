@@ -36,7 +36,7 @@ function App() {
       
       <div className="Top-Section">
         <Weather data={data} />
-        <HourlyForecast />
+        <HourlyForecast forecast={data.forecast} />
       </div>
       <div className="Bottom-Section">
         <SidebarMenu />
